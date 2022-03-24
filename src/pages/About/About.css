@@ -1,0 +1,129 @@
+:root {
+    --lightBlue: #1FD4DD;
+    --lightRed: #ff594f; 
+    --lightGrey:#fbfbfb;  
+    --backColor: #1c1c1c;
+}
+
+.about-section {
+    background-color:var(--backColor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;    
+    z-index: 1;
+
+    height:100vh;
+    min-height:100%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+.about-data {
+    padding-left: 2rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.about-data p {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.btn-cv {
+    background-color: var(--lightRed);
+    color: white;
+    padding:.8rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;   
+    border-color: none;
+    border:none;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out; 
+}
+
+
+.btn-cv:hover {
+    transition: all 0.3s ease-in-out;  
+    color:black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-cv i {
+    margin-right: 1rem;
+}
+
+P, h2, h3 {
+    color: white;
+}
+
+.about-title {
+    font-size: 6rem;
+    font-weight:900;
+    color: var(--lightRed);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: white;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.about-data span {
+    margin-right: 0.2rem;
+}
+
+.about-img-container {
+    z-index: 1;
+    width: 10%;
+    height: 10%;
+    border: .2rem solid var(--lightRed);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+
+.portrait {
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    /* border: .2rem solid var(--lightRed);
+    border-radius: 0.5rem; */
+    transition: all 0.3s ease-in-out;  
+    z-index: 1;
+}
+
+.portrait:hover {
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;  
+}
+

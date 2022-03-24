@@ -1,0 +1,77 @@
+:root {
+    --lightBlue: #1FD4DD;
+    --lightRed: #ff594f;   
+    --lightGrey:#fbfbfb;
+    --backColor: #1c1c1c;
+}
+
+
+.fa-trash {
+    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
+}
+
+footer { 
+    /* clear: both; */
+    position: relative;
+    height: 4rem;
+    margin-top: -6rem;
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    background-color: var(--backColor);
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.copy span {
+    color: var(--lightRed);
+    font-weight: 600;
+    margin-left: 0.2rem;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.copy span:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social-icon-container {
+    display: flex;
+}
+
+.social-icon {
+    color: var(--lightRed);   
+    margin: 0;
+    transition: all .3s ease;
+    margin-right: 0.3rem;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    font-size: 3rem;
+}
+
+
+
+.social-icon:hover {
+    cursor: pointer;
+    color: white;  
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    width: 4rem;  
+    z-index: 1;
+  }
+
