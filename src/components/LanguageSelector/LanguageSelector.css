@@ -1,0 +1,16 @@
+.select-lang {
+    z-index: 999;
+}
+
+.btn-lang  {
+    background-color: transparent;  
+    border: none;
+    color: white;    
+    transition: 0.3s ease-in-out;    
+}
+
+.btn-lang:hover {
+  cursor: pointer; 
+  color: var(--lightRed);
+  transition: 0.3s ease-in-out;
+}

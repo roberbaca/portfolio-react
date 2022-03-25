@@ -1,12 +1,18 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import TypeAnimation from 'react-type-animation';
+import { Link } from "react-router-dom"
 import './Home.css';
 
 const Home = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
        <section className="intro">
-        <h1>Hi! I am  <span>Roberto Baca</span> </h1>
+        {/* <h1>Hi! I am  <span>Roberto Baca</span> </h1> */}
+        <h1>{t('home.title')}<span>{t('home.name')}</span></h1>
         <div className='intro-text-container'>
             <TypeAnimation
                 cursor={true}
@@ -17,9 +23,9 @@ const Home = () => {
             />
 
         </div>
-        <div className='btn-container'>
-          <button className='btn-about'><i className="fa-solid fa-circle-info"></i>About</button>
-          <button className='btn-contact'><i className="fa-solid fa-message"></i>Contact</button>
+        <div className='btn-container'>     
+          <Link to ="/about" className='btn-about'><i className="fa-solid fa-circle-info"></i>{t('home.btn1')}</Link> 
+          <Link to ="/contact" className='btn-contact'><i className="fa-solid fa-message"></i>{t('home.btn2')}</Link>  
         </div>
     </section>
     </div>
