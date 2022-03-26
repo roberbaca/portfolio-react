@@ -1,0 +1,169 @@
+:root {
+    --lightBlue: #1FD4DD;
+    --lightRed: #ff594f; 
+    --lightGrey:#fbfbfb;  
+    --backColor: #1c1c1c;
+}
+
+.fa-gamepad .fa-github {
+    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
+}
+
+
+.videogames-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backColor);  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    z-index: 0;
+}
+
+
+.videogames-title {  
+    font-size: 6rem;
+    font-weight:900;
+    color: var(--lightRed);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.videogames-cards-container {
+    z-index: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.videogames {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backColor);
+    border: 1px solid white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.videogames-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.videogames-icon i{
+    padding-right: 0.5rem;
+}
+
+
+.icon-unity {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0; 
+    padding: 0.5rem;
+}
+
+
+.icon-cocos {
+    color: #3178c6;
+    font-size: 2.2rem;
+    margin: 0; 
+    padding: 0.5rem;
+}
+
+.icon-construct {
+    color: grey;
+    font-size: 2.2rem;
+    margin: 0; 
+    padding: 0.5rem;
+}
+
+
+.videogames-img-container {
+    width: 25%;
+}
+
+.videogames-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+
+.videogames-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 75%;
+}
+
+.videogames-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.videogames-name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--lightRed);
+}
+
+.videogames-description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1rem;    
+}
+
+.videogames-data {
+    margin-bottom: 3rem;
+}
+
+.videogames-btn-container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;    
+}
+
+.videogames-btn {     
+    background:var(--lightRed);
+    border: none;
+    color:white;
+    padding:.6rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;  
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.videogames-btn i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.videogames-btn:hover {
+    transition: all 0.3s ease-in-out;  
+    color:black;
+    background-color: white;
+    cursor: pointer;
+}  

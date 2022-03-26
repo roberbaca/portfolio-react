@@ -5,13 +5,7 @@
     --backColor: #1c1c1c;
 }
 
-
-.fa-trash {
-    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
-}
-
-footer { 
-    /* clear: both; */
+footer {   
     position: relative;
     height: 4rem;
     margin-top: -6rem;
@@ -61,7 +55,6 @@ footer {
     transition: 0.3s ease-in-out;
     font-size: 3rem;
 }
-
 
 
 .social-icon:hover {

@@ -10,9 +10,8 @@ const Home = () => {
 
   return (
     <div>
-       <section className="intro">
-        {/* <h1>Hi! I am  <span>Roberto Baca</span> </h1> */}
-        <h1>{t('home.title')}<span>{t('home.name')}</span></h1>
+       <section className="intro">      
+        <h1>{t('home.title')}<span>Roberto Baca</span></h1>
         <div className='intro-text-container'>
             <TypeAnimation
                 cursor={true}

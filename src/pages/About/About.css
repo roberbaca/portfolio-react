@@ -10,7 +10,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;    
     z-index: 1;
-
     height:100vh;
     min-height:100%;
 }
@@ -116,8 +115,6 @@ h3 {
     width: 100%;
     object-fit: contain;
     filter: grayscale(100%);
-    /* border: .2rem solid var(--lightRed);
-    border-radius: 0.5rem; */
     transition: all 0.3s ease-in-out;  
     z-index: 1;
 }

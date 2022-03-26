@@ -1,12 +1,12 @@
 .select-lang {
-    z-index: 999;
+  z-index: 999;
 }
 
 .btn-lang  {
-    background-color: transparent;  
-    border: none;
-    color: white;    
-    transition: 0.3s ease-in-out;    
+  background-color: transparent;  
+  border: none;
+  color: white;    
+  transition: 0.3s ease-in-out;    
 }
 
 .btn-lang:hover {
