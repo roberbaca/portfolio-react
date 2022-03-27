@@ -37,7 +37,7 @@ const Games = () => {
 
               </div>
               <div className='videogames-btn-container'> 
-                <a className='videogames-btn' href="https://rober-baca.itch.io/running-kid" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i>Play !</a>       
+                <a className='videogames-btn' href="https://rober-baca.itch.io/running-kid" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>       
                 <a className='videogames-btn' href="https://github.com/roberbaca/RunningKid" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i>git</a>          
               </div>
             </div>
@@ -57,12 +57,10 @@ const Games = () => {
                   </div>
                 </div>               
                 <p className='videogames-description'>{t("games.eBot.mainDescription")}</p>      
-                <p className='videogames-description'>{t("games.eBot.description1")}</p>       
-                <p className='videogames-description'>{t("games.eBot.description2")}</p>                       
-
+                <p className='videogames-description'>{t("games.eBot.description1")}</p>   
               </div>
               <div className='videogames-btn-container'> 
-                <a className='videogames-btn' href="https://rober-baca.itch.io/e-bots" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i>Play !</a>     
+                <a className='videogames-btn' href="https://rober-baca.itch.io/e-bots" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>     
                 <a className='videogames-btn' href="https://github.com/roberbaca/eBot" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i>git</a>               
               </div>
             </div>
@@ -84,7 +82,7 @@ const Games = () => {
                 <p className='videogames-description'>{t("games.zackOdyssey.description1")}</p>                            
               </div>
               <div className='videogames-btn-container'> 
-                <a className='videogames-btn' href="https://rober-baca.itch.io/zack-odyssey" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i>Play !</a>                       
+                <a className='videogames-btn' href="https://rober-baca.itch.io/zack-odyssey" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>                       
               </div>
             </div>
           </div>

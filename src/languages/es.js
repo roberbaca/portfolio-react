@@ -90,7 +90,7 @@ export default {
 
         zackOdyssey: {
             mainDescription: "Obtené diamantes, super monedas de oro, derrotá enemigos y evitá peligros en esta aventura plataformera!", 
-            description1: "Se trata de un pequeño juego que desarrollé en Construct2 para apender a implementar nuevas mecánicas de juego. Solo 10 pequeños niveles.",               
+            description1: "Se trata de un pequeño juego que desarrollé en Construct2 para apender a implementar nuevas mecánicas. Solo 10 pequeños niveles.",               
         }
     }
 
