@@ -80,7 +80,7 @@ These are the frameworks/libraries used to bootstrap my project:
 <!-- LICENSE -->
 ## License
 
-All rights reserved. See `LICENSE.txt` for more information.
+© Copyright 2022 Roberto Nicolás Baca. All Rights Reserved. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
