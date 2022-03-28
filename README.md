@@ -87,7 +87,7 @@ These are the frameworks/libraries used to bootstrap my project:
 <!-- CONTACT -->
 ## Contact
 
-Roberto Baca - [@your_twitter](https://twitter.com/your_username) - roberto.nicolas.baca@gmail.com
+Roberto Baca - [@roberbaca](https://twitter.com/your_username) - roberto.nicolas.baca@gmail.com
 
 Project Link: [https://github.com/roberbaca/portfolio-react](https://github.com/roberbaca/portfolio-react)
 
