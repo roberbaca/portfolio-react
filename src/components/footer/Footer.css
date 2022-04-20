@@ -4,27 +4,24 @@
     --lightGrey:#fbfbfb;
     --backColor: #1c1c1c;
 }
+  
+.fa-trash {
+    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
+}
 
-footer {   
-    position: relative;
-    height: 4rem;
-    margin-top: -6rem;
-
+footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: var(--backColor);
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .copy {
     display: flex;
     align-items: center;
-    justify-content: center;
     color: white;
-    font-size: 1.3rem;
 }
 
 .copy span {
@@ -47,14 +44,15 @@ footer {
 }
 
 .social-icon {
-    color: var(--lightRed);   
+    color: var(--lightRed);
+    font-size: 2rem;
     margin: 0;
     transition: all .3s ease;
     margin-right: 0.3rem;
     z-index: 1;
     transition: 0.3s ease-in-out;
-    font-size: 3rem;
 }
+
 
 
 .social-icon:hover {
@@ -62,9 +60,4 @@ footer {
     color: white;  
     transition: 0.3s ease-in-out;
 }
-
-.logo {
-    width: 4rem;  
-    z-index: 1;
-  }
 

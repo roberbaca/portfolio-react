@@ -1,28 +1,41 @@
 import './App.css';
-import i18n from './languages';
-import { useTranslation } from 'react-i18next';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import Contact from './pages/Contact/Contact';
+import Background from './components/Background/Background';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
 import Router from './Router/Router';
 
 /*--------------------------------------------------------------------------------
 
-	# Personal Portfolio 1.0 - Mar 26, 2022
+	# Personal Portfolio 1.0 - Mar 11, 2022
 	# ------------------------------------------------------------------------------
 	# Designed & coded by Roberto Baca
 	# Websites:  http://www.robertobaca.dev -  Email: roberto.nicolas.baca@gmail.com
 
 ---------------------------------------------------------------------------------- */
 
+//npm install react-icons
+//https://react-icons.github.io/react-icons
+
 function App() {
 
-  const { t } = useTranslation();
-
-  i18n.options.interpolation.defaultVariables = {
-    companyName: 'RNB'
-  };
-
   return (
-    <div className="App">  
-       <Router/>     
+    <div className="App">
+      {/* <Background/>
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Projects/>
+      <Contact/>
+      <Footer/> */}
+
+       <Router/>
+      
+   
+      
     </div>
   );
 }

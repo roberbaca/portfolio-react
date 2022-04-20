@@ -5,23 +5,25 @@
     --backColor: #1c1c1c;
 }
 
-.fa-globe .fa-github {
-    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
-}
-
-
 .projects {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     background-color: var(--backColor);  
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-bottom: 2rem;
-    z-index: 0;
+    z-index: 1;
 }
 
+/* .projects-container {
+    width: 100%;
+    display: flex;
+    justify-content:center;   
+    align-items: center;  
+   
+} */
 
 .projects-title {  
     font-size: 6rem;
@@ -31,6 +33,17 @@
     text-align: center;
     margin-bottom: 2rem;
 }
+
+/* .projects-subtitle {  
+    font-size: 2rem;
+    font-weight:100;
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: left;
+    margin-left: 4rem;
+    margin: 0;
+    margin-bottom: 0.8rem;   
+} */
 
 .projects-cards-container {
     z-index: 1;
@@ -48,6 +61,7 @@
     flex-direction: row;
     background-color: var(--backColor);
     border: 1px solid white;
+    /* border-radius: 0.5rem; */
     padding: 1rem;
     margin-bottom: 2rem;
     width: 80%;
@@ -130,7 +144,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;  
-    margin-bottom: 2rem;
 }
 
 
@@ -139,18 +152,10 @@
     flex-direction: column;
     margin-left: 2rem;
     width: 75%;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
 .card-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     margin: 0;
     margin-bottom: 1rem;
@@ -158,22 +163,15 @@
 }
 
 .card-description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 1rem;    
-}
-
-.card-data {
-    margin-bottom: 3rem;
+    margin-bottom: 0.8rem;
 }
 
 .card-btn-container {
     display: flex;
-    align-items:center;
-    justify-content: center;
     flex-direction: row;
-    margin-top: 1rem;    
 }
 
 .card-btn {     
@@ -192,7 +190,7 @@
     box-sizing: border-box;
     border-radius: 0.5rem;
     margin-right: 1rem;
-    text-decoration: none;
+    margin-top: 1rem;
 }
 
 .card-btn i{
@@ -206,185 +204,3 @@
     background-color: white;
     cursor: pointer;
 }  
-
-
-
-
-/* ----------------
-    Media Queries
-------------------*/
-
-
-/* Pantallas extra grandes (desktops de mas de 1400px) */
-@media (min-width: 1440px) { 
-  
-    
-}
-
-
-/* Pantallas extra grandes (desktops de mas de 1400px) */
-@media (max-width: 1440px) { 
-    
-    .card {       
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-        
-    .card-img-container {
-        width: 50%;
-    }
-
-    .card-info { 
-        margin-left: 2rem;
-        width: 50%;    
-    }
-    
-}
-
-
-/* Pantallas grandes (desktops de menos de 1200px) */
-@media (max-width: 1200px) { 
-
-    .card {       
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-        
-    .card-img-container {
-        width: 50%;
-    }
-
-    .card-info { 
-        margin-left: 2rem;
-        width: 50%;    
-    }
-
-    .card-title {
-        font-size: 2rem;        
-    }
-
-    .icon-html {
-        font-size: 2rem;
-    }
-    
-    .icon-css {        
-        font-size: 2rem;     
-    }
-    
-    .icon-js {      
-        font-size: 2rem;     
-    }
-    
-    .icon-react {     
-        font-size: 2rem;  
-    }
-    
-    
-    .icon-redux { 
-        font-size: 2rem;        
-    }
-    
-    
-    .icon-mongo {
-        font-size: 2rem;     
-    }
-    
-    
-    .icon-node {      
-        font-size: 2rem;       
-    }
-    
-    .icon-express {      
-        font-size: 2rem;       
-    }
-    
-
-}
-
-
-/* Pantallas medianas (tablets de menos de 992px) */
-@media (max-width: 992px) { 
-}
-
-
-/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
-@media (max-width: 768px) { 
-
-    .card {     
-        display: flex;
-        flex-direction: column;       
-        width: 100%;
-    }
-    
-
-    .card-img-container {
-        width: 100%;
-    }
-    
-    .card-img {
-        width: 100%;
-        height: 100%;
-        object-fit:contain;  
-    }
-        
-    .card-info {
-        display: flex;
-        flex-direction: column;       
-        margin: 0; 
-        width: 100%;     
-    }
-
-    .card-title {
-        font-size: 3rem;        
-    }
-
-    .icon-html {
-        font-size: 2.5rem;
-    }
-    
-    .icon-css {        
-        font-size: 2.5rem;    
-    }
-    
-    .icon-js {      
-        font-size: 2.5rem; 
-    }
-    
-    .icon-react {     
-        font-size: 2.5rem;
-    }
-    
-    
-    .icon-redux { 
-        font-size: 2.5rem;       
-    }
-    
-    
-    .icon-mongo {
-        font-size: 2.5rem;     
-    }
-    
-    
-    .icon-node {      
-        font-size: 2.5rem;       
-    }
-    
-    .icon-express {      
-        font-size: 2.5rem;       
-    }
-    
-
-
-}
-
-
-/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
-@media (max-width: 576px) { 
-
-   
-}
-
-@media (max-width: 321px) { 
-   
-
-}
