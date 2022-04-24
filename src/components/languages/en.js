@@ -80,7 +80,7 @@ export default {
         runningKid: {
            mainDescription: "Running Kid is an endless runner game in 3D where you can jump, slide and even destroy wood boxes with your special spinning move !", 
            description1: "Is my first game made in Unity. It was made as a college project and consists only in 1 short and simple level.",   
-           description2: "Each time you play, the level is slightly different. It´ss procedurally generated. Put in really simple words, procedural generation means the data or the content is generated via a certain logic/algorithm, instead of a human creating the content manually.",  
+           description2: "Each time you play, the level is slightly different. It´s procedurally generated. If I put it in really simple words, procedural generation means the data or the content is generated via a certain logic/algorithm, instead of a human creating the content manually.",  
         },
 
         eBot: {

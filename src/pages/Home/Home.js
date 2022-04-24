@@ -1,37 +1,37 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import TypeAnimation from 'react-type-animation';
 import { Link } from "react-router-dom"
-import TypeWriter from "../../components/Typewriter/Typewriter"
 import './Home.css';  
+import Typist from 'react-typist';
+import {useState, useEffect} from 'react';
+
 
 const Home = () => {
 
   const { t } = useTranslation(); 
-  const text = `< Full Stack Developer />`;
-  const text2 = `< Videogames Developer />`;
+  const words = ['< Full Stack Developer />', '< Videogames Developer />'];
+  const [count, setCount] = useState(1);
 
-  //https://github.com/jstejada/react-typist/tree/master/examples
+  useEffect(() => {      
+    setCount(1);
+  }, [count]);
 
-  
   return (
     <div>
        <section className="intro">      
-        <h1>{t('home.title')}<span>Roberto Baca</span></h1>
-       
-        <TypeWriter content={text} speed={100} />;
-          {/* <div className='intro-text-container'>
-              <TypeAnimation
-                  cursor={true}
-                  sequence={[' < Full Stack Developer />', 3000, '< VideoGames Developer />', 3000]}
-                  wrapper="div"
-                  repeat={Infinity}
-                  className= "intro-text-anim"
-              />
-
-          </div> */}
-
-       
+        <h1>{t('home.title')}<span>Roberto Baca</span></h1> 
+        <div className='intro-text-container'>
+          {count ? (
+            <Typist className='intro-text-anim' avgTypingDelay={100} cursor={{show: true, blink: true, element: '|', hideWhenDone: false, hideWhenDoneDelay: 1000,}} onTypingDone={() => setCount(0)}>
+              <span>{words[0]}</span>
+              <Typist.Backspace count={words[0].length} delay={800} />
+              <span>{words[1]}</span>
+              <Typist.Backspace count={words[1].length} delay={800} />
+            </Typist>
+            ) : (
+              ""
+            )}
+        </div>                
         
         <div className='btn-container'>     
           <Link to ="/about" className='btn-about'><i className="fa-solid fa-circle-info"></i>{t('home.btn1')}</Link> 

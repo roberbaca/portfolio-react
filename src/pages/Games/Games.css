@@ -91,6 +91,7 @@
 .videogames-img {
     width: 100%;
     object-fit: cover;  
+    margin-bottom: 2rem;
 }
 
 .videogames-info {
@@ -152,6 +153,8 @@
     z-index: 1;
     overflow: hidden;
     position: relative;  
+    width: 12rem;
+    text-align: center;
 }
 
 .videogames-btn i {
@@ -197,7 +200,7 @@
 /* Pantallas extra grandes (desktops de mas de 1400px) */
 @media (min-width: 1440px) { 
   
-    .videogames {
+    /* .videogames {
         padding: 3rem;
     } 
     
@@ -228,7 +231,7 @@
     
     .icon-construct {
         font-size: 4rem;
-    }    
+    }     */
     
 }
 
@@ -244,6 +247,18 @@
 /* Pantallas grandes (desktops de menos de 1200px) */
 @media (max-width: 1200px) { 
 
+    .videogames {
+        width: 100%;
+    }
+
+    .videogames-img-container {
+        width: 50%;
+    }
+
+    .videogames-info {
+        width: 50%;
+        margin-left: 2rem;
+    }
     
 }
 
@@ -261,17 +276,37 @@
         font-size: 5rem;       
     }
 
-    .videogames {
-        width: 95%;
+    .videogames {        
+        display: flex;
+        flex-direction: column;       
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .videogames-btn {
         font-size: 1rem;
-        padding:.8rem 1rem;
+        padding:.8rem 1rem;  
+        width: 8rem;   
+        text-align: center;
     }
     
     .videogames-btn  i{
         font-size: 1rem;
+    }
+
+    .videogames-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .videogames-info {
+        display: flex;
+        flex-direction: column;       
+        margin: 0; 
+        width: 100%;     
     }
 }
 
@@ -292,6 +327,11 @@
         width: 100%;
         margin: 0;
         margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;       
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .videogames-info {

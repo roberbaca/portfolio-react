@@ -39,16 +39,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.anim-text {
+.intro-text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.intro-text-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 5rem;    
     width: 100%;
     position: absolute;
@@ -60,6 +54,28 @@ body {
     height: 3rem;
 }
 
+.Typist .Cursor {
+    display: inline-block; 
+}
+    
+.Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite; 
+}
+  
+@keyframes blink {
+    0% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    } 
+}
+
+      
 .btn-container {
     display: flex;
     justify-content: center;
@@ -86,6 +102,7 @@ body {
     z-index: 1;
     overflow: hidden;
     position: relative;  
+    text-align: center;
 }
 
 .btn-about i{
@@ -271,7 +288,7 @@ span {
     }
     
     .intro-text-container {       
-        height: 2rem;       
+        height: 2rem;             
     }
     
     .intro-text-anim {
@@ -282,7 +299,7 @@ span {
     .btn-container {
         display: flex;
         flex-direction: column;     
-        margin-top: 2rem;   
+        margin-top: 6rem;   
     }
 
     .btn-about {

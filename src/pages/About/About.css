@@ -165,7 +165,7 @@ p {
 
 
 /* Pantallas extra grandes (desktops de mas de 1400px) */
-@media (min-width: 1440px) { 
+@media (min-width: 2560px) { 
  
     .about-data p {
         font-size: 2rem;

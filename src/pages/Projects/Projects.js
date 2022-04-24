@@ -18,7 +18,7 @@ const Projects = () => {
 
         
         <div className='card'>
-            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_template.png')} alt="card-img" /></div>}
+            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/gameOverCard480x800.png')} alt="card-img" /></div>}
             <div className='card-info'>
               <div className='card-data'>
                 <div className='card-header'>
@@ -41,7 +41,7 @@ const Projects = () => {
                 <p className='card-description'>{t("projects.gameOver.description7")}</p>
                 <p className='card-description'>{t("projects.gameOver.description8")}</p>
               </div>
-              {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_templateHor.png')} alt="card-img" /></div>}
+              {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/gameOverCard800x480.png')} alt="card-img" /></div>}
 
 
               <div className='card-btn-container'> 
@@ -53,7 +53,7 @@ const Projects = () => {
            
 
           <div className='card'>
-            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_template.png')} alt="card-img" /></div>}
+            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/freshMarketCard480x800.png')} alt="card-img" /></div>}
             <div className='card-info'>
               <div className='card-data'>
                 <div className='card-header'>
@@ -69,7 +69,7 @@ const Projects = () => {
                 <p className='card-description'>{t("projects.freshMarket.description2")}</p>       
                 <p className='card-description'>{t("projects.freshMarket.description3")}</p>               
               </div>
-              {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_templateHor.png')} alt="card-img" /></div>}
+              {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/freshMarketCard800x480.png')} alt="card-img" /></div>}
               <div className='card-btn-container'> 
                 <a className='card-btn' href="https://freshmarket.vercel.app/" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-globe"></i>live</a>       
                 <a className='card-btn' href="https://github.com/roberbaca/ECommerceJS" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i>git</a>               
@@ -78,8 +78,7 @@ const Projects = () => {
           </div>
 
           <div className='card'>
-            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_template.png')} alt="card-img" /></div>}
-            <div className='card-info'>
+            {window.screen.width > 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/todoListCard480x800.png')} alt="card-img" /></div>}            <div className='card-info'>
               <div className='card-data'>
                 <div className='card-header'>
                   <p className='card-title'>ToDo List</p>
@@ -93,7 +92,7 @@ const Projects = () => {
                 <p className='card-description'>{t("projects.toDo.description1")}</p>
                 <p className='card-description'>{t("projects.toDo.description2")}</p>
                 <p className='card-description'>{t("projects.toDo.description3")}</p>    
-                {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/card_templateHor.png')} alt="card-img" /></div>}         
+                {window.screen.width <= 768 && <div className='card-img-container'><img className="card-img" src={require('../../assets/todoListCard800x480.png')} alt="card-img" /></div>}         
               </div>
               <div className='card-btn-container'> 
                 <a className='card-btn' href="https://todolistjs.vercel.app/" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-globe"></i>live</a>       

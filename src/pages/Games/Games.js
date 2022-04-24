@@ -18,7 +18,7 @@ const Games = () => {
 
         <div className='videogames'>
             {window.screen.width > 768 && <div className='videogames-img-container'>
-            <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" />
+            <img className="videogames-img" src={require('../../assets/runningCard480x800.png')} alt="card-img" />
             </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
@@ -37,7 +37,7 @@ const Games = () => {
               </div>
 
               {window.screen.width <= 768 && <div className='videogames-img-container'>
-                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+                <img className="videogames-img" src={require('../../assets/runningCard800x480.png')} alt="card-img" />
               </div>}
               <div className='videogames-btn-container'> 
                 <a className='videogames-btn' href="https://rober-baca.itch.io/running-kid" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>       
@@ -48,7 +48,7 @@ const Games = () => {
 
           <div className='videogames'>
             {window.screen.width > 768 && <div className='videogames-img-container'>
-              <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" /> 
+              <img className="videogames-img" src={require('../../assets/ebotCard480x800.png')} alt="card-img" /> 
             </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
@@ -64,7 +64,7 @@ const Games = () => {
               </div>
               
               {window.screen.width <= 768 && <div className='videogames-img-container'>
-                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+                <img className="videogames-img" src={require('../../assets/ebotCard800x480.png')} alt="card-img" />
               </div>}
 
               <div className='videogames-btn-container'> 
@@ -76,7 +76,7 @@ const Games = () => {
 
           <div className='videogames'>
           {window.screen.width > 768 && <div className='videogames-img-container'>
-              <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" /> 
+              <img className="videogames-img" src={require('../../assets/zackCard480x800.png')} alt="card-img" /> 
             </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
@@ -91,7 +91,7 @@ const Games = () => {
               </div>
 
               {window.screen.width <= 768 && <div className='videogames-img-container'>
-                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+                <img className="videogames-img" src={require('../../assets/ebotCard480x800.png')} alt="card-img" />
               </div>}
               <div className='videogames-btn-container'> 
                 <a className='videogames-btn' href="https://rober-baca.itch.io/zack-odyssey" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>                       

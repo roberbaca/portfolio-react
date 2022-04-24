@@ -13,7 +13,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;    
     z-index: 1;
-    margin-bottom: 4rem;   
+    margin-bottom: 12rem;   
 }
 
 .contact-container {
@@ -249,6 +249,7 @@
 
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
 @media (max-width: 576px) { 
+    
     .contact-title {  
         font-size: 3rem;
         margin-top: 5rem;
