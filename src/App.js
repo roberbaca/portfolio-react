@@ -1,41 +1,31 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Contact from './pages/Contact/Contact';
-import Background from './components/Background/Background';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects';
+import i18n from './components/languages/index';
+import { useTranslation } from 'react-i18next';
 import Router from './Router/Router';
+//import MyLandbot from "./components/myLandBot/myLandBot";
+
 
 /*--------------------------------------------------------------------------------
 
-	# Personal Portfolio 1.0 - Mar 11, 2022
+	# Personal Portfolio 1.0 - Mar 26, 2022
 	# ------------------------------------------------------------------------------
 	# Designed & coded by Roberto Baca
 	# Websites:  http://www.robertobaca.dev -  Email: roberto.nicolas.baca@gmail.com
 
 ---------------------------------------------------------------------------------- */
 
-//npm install react-icons
-//https://react-icons.github.io/react-icons
-
 function App() {
 
-  return (
-    <div className="App">
-      {/* <Background/>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/> */}
+  const { t } = useTranslation();
 
-       <Router/>
-      
-   
-      
+  i18n.options.interpolation.defaultVariables = {
+    companyName: 'RNB'
+  };
+
+  return (
+    <div className="App">  
+        {/* <MyLandbot url="https://chats.landbot.io/v3/H-1217146-AFALLR7RKR2GF4P1/index.json" /> */}
+       <Router/>     
     </div>
   );
 }

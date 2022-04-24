@@ -5,20 +5,19 @@
     --backColor: #1c1c1c;
 }
 
+body {
+    background-color: var(--backColor);
+}
+
 .intro {
     font-family: 'Montserrat', sans-serif;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite; */
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--backColor);
-    padding-top: 6rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;     
-    height: 30rem;
-    
-   
+    height: 100vh;
+    margin-bottom: 4rem;
 }
 
 @keyframes gradient {
@@ -34,19 +33,29 @@
 }
 
 .intro h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 800;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
+.anim-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro-text-container {
-    height: 5rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 5rem;    
     width: 100%;
+    position: absolute;
 }
 
 .intro-text-anim {
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     height: 3rem;
 }
@@ -60,21 +69,23 @@
 
 
 .btn-about {
-    margin-top: 2rem;
-    background:var(--lightRed);
-    border: none;
-    color:white;
-    padding:.8rem 2rem;
-    font-size: 1.3rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;  
-    text-transform: uppercase;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    z-index: 1;
     box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-size: 1.3rem;
+    background: var(--lightRed);
+    color: white;
+    border: none;
     border-radius: 0.5rem;
+    padding:.8rem 2rem;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;  
 }
 
 .btn-about i{
@@ -82,23 +93,43 @@
     font-size: 2rem;
 }
 
-
-.btn-about:hover {
+.btn-about:hover{
+    color: var(--lightRed);
     cursor: pointer;
-    background-color: white;
-    transition: 0.3s ease-in-out;
-    color: black;
+}
+
+.btn-about::after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+.btn-about::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+}
+
+.btn-about:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+    transition: all 0.3s ease-out;
 }
 
 .btn-contact {
-    background-color: transparent;
+    margin: 0;
+    margin-left: 2rem;
+    background-color: var(--backColor);
     color: var(--lightRed);
     padding:.8rem 2rem;
     font-size: 1.3rem;
-    border-radius: 0.5rem;   
-    margin-top: 2rem;
-    margin-left: 2rem;
+    border: 1px solid var(--lightRed);
     border-color:var(--lightRed);
+    border-radius: 0.5rem;   
     z-index: 1;    
     box-sizing: border-box;    
     text-align: center;
@@ -106,13 +137,13 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     transition: 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .btn-contact i{
     margin-right: 1rem;
     font-size: 2rem;
 }
-
 
 .btn-contact:hover {
     cursor: pointer;
@@ -121,6 +152,166 @@
     transition: 0.3s ease-in-out;
 }
 
+
 span {
     color: var(--lightRed);
+}
+
+
+/* ----------------
+    Media Queries
+------------------*/
+
+
+/* Pantallas extra grandes (desktops de mas de 1400px) */
+@media (min-width: 1440px) { 
+  
+    
+}
+
+
+/* Pantallas extra grandes (desktops de mas de 1400px) */
+@media (max-width: 1440px) { 
+    
+  
+    
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1200px) { 
+
+    .intro h1 {
+        font-size: 4rem;        
+    }
+    
+    .intro-text-container {       
+        height: 3rem;       
+    }
+    
+    .intro-text-anim {
+        font-size: 2.5rem;    
+        height: 3rem;
+    }
+
+
+
+}
+
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 992px) { 
+}
+
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 768px) { 
+
+    .intro h1 {
+        font-size: 3rem;        
+    }
+    
+    .intro-text-container {       
+        height: 2rem;       
+    }
+    
+    .intro-text-anim {
+        font-size: 2rem;    
+        height: 2rem;
+    }
+    
+    .btn-about {
+        margin-top: 2rem;   
+        padding:.8rem 2rem;
+        font-size: 1rem; 
+    }
+
+    .btn-about i{
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    .btn-contact {
+        margin-top: 2rem;
+        margin-left: 2rem;   
+        padding:.8rem 2rem;
+        font-size: 1rem;   
+    }
+
+    .btn-contact i{
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    
+
+
+
+
+}
+
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 576px) { 
+
+    span {
+        margin-left: 0.8rem;
+    }
+
+    .intro {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .intro h1 {
+        width: 100%;
+        font-size: 1.8rem;        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .intro-text-container {       
+        height: 2rem;       
+    }
+    
+    .intro-text-anim {
+        font-size: 1.5rem;    
+        height: 2rem;
+    }
+    
+    .btn-container {
+        display: flex;
+        flex-direction: column;     
+        margin-top: 2rem;   
+    }
+
+    .btn-about {
+        margin: 0rem;   
+        padding:.8rem 2rem;
+        font-size: 1rem; 
+        width: 14rem;  
+    }
+
+    .btn-about i{
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    .btn-contact {
+        margin: 0rem;  
+        margin-top: 1rem;
+        padding:.8rem 2rem;
+        font-size: 1rem; 
+        width: 14rem;  
+    }
+
+    .btn-contact i{
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 321px) { 
+   
+
 }

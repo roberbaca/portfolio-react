@@ -4,24 +4,27 @@
     --lightGrey:#fbfbfb;
     --backColor: #1c1c1c;
 }
-  
-.fa-trash {
-    pointer-events: none; /* para poder clickear en los iconos de font awesome*/
-}
 
-footer {
+footer {   
+    position: relative;
+    height: 4rem;
+    margin-top: -10rem;
+
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
     background-color: var(--backColor);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;    
 }
 
 .copy {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
+    font-size: 1.3rem;
 }
 
 .copy span {
@@ -44,15 +47,14 @@ footer {
 }
 
 .social-icon {
-    color: var(--lightRed);
-    font-size: 2rem;
+    color: var(--lightRed);   
     margin: 0;
     transition: all .3s ease;
     margin-right: 0.3rem;
     z-index: 1;
     transition: 0.3s ease-in-out;
+    font-size: 3rem;
 }
-
 
 
 .social-icon:hover {
@@ -61,3 +63,192 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
+.logo {
+    width: 4rem;  
+    z-index: 1;
+}
+
+
+
+
+/* ----------------
+    Media Queries
+------------------*/
+
+
+/* Pantallas extra grandes (desktops de mas de 1400px) */
+@media (min-width: 1440px) { 
+  
+    footer {   
+        height: 4rem;
+        margin-top: 0rem; 
+        padding-bottom: 2rem;        
+    }
+    
+    .copy {
+        font-size: 2rem;
+    }
+    
+    
+    .social-icon {
+        margin-right: 0.3rem;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .logo {
+        width: 4rem;  
+        height: 4rem;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Pantallas extra grandes (desktops de mas de 1400px) */
+@media (max-width: 1440px) { 
+      
+    footer {   
+        height: 4rem;
+        margin-top: 0rem;    
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;        
+    }
+    
+    .copy {
+        font-size: 1.2rem;
+    }    
+    
+    .social-icon {
+        margin-right: 0.3rem;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .logo {
+        width: 2.5rem;  
+        height: 2.5rem;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1200px) { 
+
+    footer {   
+        height: 4rem;
+        margin-top: -10rem;    
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;        
+    }
+    
+    .copy {
+        font-size: 1.3rem;
+    }    
+    
+    .social-icon {
+        margin-right: 0.3rem;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .logo {
+        width: 2.5rem;  
+        height: 2.5rem;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+}
+
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 992px) { 
+}
+
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 768px) { 
+
+    footer {   
+        height: 4rem;
+        margin-top: -10rem;    
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;        
+    }
+    
+    .copy {
+        font-size: 0.8rem;
+    }    
+    
+    .social-icon {
+        margin-right: 0.3rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .logo {
+        width: 2.5rem;  
+        height: 2.5rem;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 576px) { 
+
+    footer {   
+        height: 2rem;
+        margin-top: -8rem;    
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;    
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .copy {
+         display: none;     
+    }    
+    
+    .social-icon {
+        margin-right: 0.3rem;
+        font-size: 2.5rem;  
+    }
+    
+     .logo {
+        width: 2.5rem;  
+        height: 2.5rem;  
+        margin: 0;  
+        margin-right: 0.4rem;  
+
+    }
+
+}
+
+@media (max-width: 321px) { 
+   
+
+}

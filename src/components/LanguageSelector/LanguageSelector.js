@@ -1,5 +1,5 @@
 import React from 'react'
-import { updateLang } from '../../languages';
+import { updateLang } from '../languages';
 import { useState } from 'react';
 import './LanguageSelector.css';
 

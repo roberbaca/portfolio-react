@@ -17,9 +17,9 @@ const Games = () => {
         <div className = "videogames-cards-container">
 
         <div className='videogames'>
-            <div className='videogames-img-container'>
-              <img className="videogames-img" src={require('../../assets/game0.png')} alt="card-img" /> 
-            </div>
+            {window.screen.width > 768 && <div className='videogames-img-container'>
+            <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" />
+            </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
                 <div className='videogames-header'>
@@ -32,10 +32,13 @@ const Games = () => {
 
                 <p className='videogames-description'>{t("games.runningKid.mainDescription")}</p>
                 <p className='videogames-description'>{t("games.runningKid.description1")}</p>
-                <p className='videogames-description'>{t("games.runningKid.description2")}</p>
-                
+                <p className='videogames-description'>{t("games.runningKid.description2")}</p>           
 
               </div>
+
+              {window.screen.width <= 768 && <div className='videogames-img-container'>
+                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+              </div>}
               <div className='videogames-btn-container'> 
                 <a className='videogames-btn' href="https://rober-baca.itch.io/running-kid" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>       
                 <a className='videogames-btn' href="https://github.com/roberbaca/RunningKid" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i>git</a>          
@@ -44,9 +47,9 @@ const Games = () => {
           </div>
 
           <div className='videogames'>
-            <div className='videogames-img-container'>
-              <img className="videogames-img" src={require('../../assets/game2.png')} alt="card-img" /> 
-            </div>
+            {window.screen.width > 768 && <div className='videogames-img-container'>
+              <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" /> 
+            </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
                 <div className='videogames-header'>
@@ -59,6 +62,11 @@ const Games = () => {
                 <p className='videogames-description'>{t("games.eBot.mainDescription")}</p>      
                 <p className='videogames-description'>{t("games.eBot.description1")}</p>   
               </div>
+              
+              {window.screen.width <= 768 && <div className='videogames-img-container'>
+                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+              </div>}
+
               <div className='videogames-btn-container'> 
                 <a className='videogames-btn' href="https://rober-baca.itch.io/e-bots" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>     
                 <a className='videogames-btn' href="https://github.com/roberbaca/eBot" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i>git</a>               
@@ -67,9 +75,9 @@ const Games = () => {
           </div>
 
           <div className='videogames'>
-            <div className='videogames-img-container'>
-              <img className="videogames-img" src={require('../../assets/game3.png')} alt="card-img" /> 
-            </div>
+          {window.screen.width > 768 && <div className='videogames-img-container'>
+              <img className="videogames-img" src={require('../../assets/card_template.png')} alt="card-img" /> 
+            </div>}
             <div className='videogames-info'>
               <div className='videogames-data'>
                 <div className='videogames-header'>
@@ -81,6 +89,10 @@ const Games = () => {
                 <p className='videogames-description'>{t("games.zackOdyssey.mainDescription")}</p>
                 <p className='videogames-description'>{t("games.zackOdyssey.description1")}</p>                            
               </div>
+
+              {window.screen.width <= 768 && <div className='videogames-img-container'>
+                <img className="videogames-img" src={require('../../assets/card_templateHor.png')} alt="card-img" />
+              </div>}
               <div className='videogames-btn-container'> 
                 <a className='videogames-btn' href="https://rober-baca.itch.io/zack-odyssey" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-gamepad"></i>Play !</a>                       
               </div>
