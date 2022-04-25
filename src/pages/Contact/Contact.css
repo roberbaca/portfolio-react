@@ -250,6 +250,10 @@
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
 @media (max-width: 576px) { 
     
+    .contact-form {
+        width: 85%;
+    } 
+
     .contact-title {  
         font-size: 3rem;
         margin-top: 5rem;
@@ -272,7 +276,9 @@
    
 }
 
-@media (max-width: 321px) { 
+@media (max-width: 375px) { 
    
-
+    .contact-form {
+        width: 85%;
+    } 
 }

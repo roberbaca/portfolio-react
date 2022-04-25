@@ -243,14 +243,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    /* margin-top: 5rem; */
+    align-items:center;    
   }
 
   .navigation-close {
     justify-content: center;
-    align-items:center;
-    /* margin-top: 5rem; */
+    align-items:center; 
   }
 
   .navBar-btn i { 
@@ -272,7 +270,7 @@
 
 }
 
-@media (max-width: 321px) { 
+@media (max-width: 375px) { 
    
 
 }
