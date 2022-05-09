@@ -71,6 +71,8 @@ These are the frameworks/libraries used to bootstrap my project:
 * [I18Next](https://www.i18next.com/)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
+* [React Typist](https://www.npmjs.com/package/react-typist)
+* [Landbot](https://landbot.io/lp/chatbot-creator?utm_source=google_ads&utm_medium=cpc&utm_term=landbot&utm_campaign=UR_AllMarkets_G_S_B_Brand&gclid=CjwKCAjw9-KTBhBcEiwAr19ig3QEqiCfQ1Wnv3A9ehSdH6zng-rrbn-8BOR5L01EdgSoZFUxJTWWSRoCqLsQAvD_BwE)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
