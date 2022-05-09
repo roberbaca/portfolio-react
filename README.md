@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![PersonalPortfolio]![imagen](https://user-images.githubusercontent.com/83043304/167410794-1678d53c-f78a-4fda-8fa1-2c9cc67a8015.png)](https://robertobaca-90035.web.app/)
+[imagen](https://user-images.githubusercontent.com/83043304/167410794-1678d53c-f78a-4fda-8fa1-2c9cc67a8015.png)](https://robertobaca-90035.web.app/)
 
 This is my personal website or portfolio. I think this is a great opportunity to reach more people with my work. It’s also an extension of my personality and gives me the chance to craft a design that reflects who I am as a creative. I hope you enjoyed it.
 
